@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Source Serif Pro", serif;
+}
+.parallaxone {
+  width: 100%;
+  height: 600px;
+  background: url(../assets/im1.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+h1,
+h2 {
+  color: #ccac7a;
+}
+.parallaxtwo {
+  width: 100%;
+  height: 600px;
+  background: url(../assets/second.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxthree {
+  width: 100%;
+  height: 850px;
+  background: url(../assets/three.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parent {
+  display: flex;
+  margin: 2rem 15vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box1 {
+  width: 42.5vw;
+}
+
+.box2 {
+  width: 42.5vw;
+}
+.box2 h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+p {
+  text-align: left;
+  padding-top: 1rem;
+  padding-right: 4rem;
+}
+
+#services-heading,
+#research-heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+#services-heading-2,
+#research-heading-2 {
+  font-size: 4rem;
+}
+
+@media (max-width: 991px) {
+  #services-heading,
+  #research-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .parent {
+    margin: 2rem;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  p {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+  #services-heading-2,
+  #research-heading-2 {
+    font-size: 2rem;
+    padding: 4rem;
+    line-height: 1;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .box1,
+  .box2 {
+    width: 100vw;
+  }
+  #services-heading,
+  #research-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .parent {
+    margin: 2rem;
+    flex-wrap: wrap;
+  }
+  p {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+  #services-heading-2,
+  #research-heading-2 {
+    font-size: 2rem;
+    padding: 3rem;
+    line-height: 1;
+    text-align: center;
+  }
+  .parallaxone {
+    background-attachment: inherit;
+  }
+}
