@@ -12,7 +12,7 @@ html {
 }
 .parallaxone {
   width: 100%;
-  height: 600px;
+  height: 60vh;
   background: url(../assets/im1.png);
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -45,14 +45,14 @@ h2 {
   justify-content: space-between;
 }
 
-.box1 {
+.box-1 {
   width: 42.5vw;
 }
 
-.box2 {
+.box-2 {
   width: 42.5vw;
 }
-.box2 h1 {
+.box-2 h1 {
   text-align: center;
   font-size: 2rem;
 }
@@ -72,35 +72,48 @@ p {
 #research-heading-2 {
   font-size: 4rem;
 }
-
+@media (max-width: 2000px) {
+  .parent {
+    margin-bottom: 4rem;
+  }
+}
 @media (max-width: 991px) {
+  .box-1,
+  .box-2 {
+    width: 45vw;
+    text-align: center;
+  }
   #services-heading,
   #research-heading {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   .parent {
-    margin: 2rem;
+    margin: 2rem 0;
     flex-wrap: wrap;
-    width: 100vw;
   }
   p {
-    font-size: 0.75rem;
+    font-size: qrem;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
   #services-heading-2,
   #research-heading-2 {
-    font-size: 2rem;
-    padding: 4rem;
+    font-size: 3rem;
     line-height: 1;
     text-align: center;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .parallaxone {
+    background-attachment: inherit;
   }
 }
 @media (max-width: 768px) {
-  .box1,
-  .box2 {
+  .box-1,
+  .box-2 {
     width: 100vw;
+    text-align: center;
   }
   #services-heading,
   #research-heading {
@@ -108,20 +121,20 @@ p {
     text-align: center;
   }
   .parent {
-    margin: 2rem;
+    margin: 2rem 0;
     flex-wrap: wrap;
   }
   p {
     font-size: 0.75rem;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
   #services-heading-2,
   #research-heading-2 {
     font-size: 2rem;
-    padding: 3rem;
     line-height: 1;
     text-align: center;
+    margin: 0 auto;
   }
   .parallaxone {
     background-attachment: inherit;
