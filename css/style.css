@@ -10,6 +10,24 @@ html {
   overflow-x: hidden;
   font-family: "Source Serif Pro", serif;
 }
+
+section
+{
+  position: relative; 
+}
+
+body {
+  position: relative;
+}
+
+body:after {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.parallaxone {background-attachment: scroll;}
+
 .parallaxone {
   width: 100%;
   height: 60vh;
@@ -75,6 +93,10 @@ p {
 @media (max-width: 2000px) {
   .parent {
     margin-bottom: 4rem;
+  }
+
+  .parallaxone {
+    background-attachment: inherit;
   }
 }
 @media (max-width: 991px) {
