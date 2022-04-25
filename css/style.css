@@ -30,15 +30,15 @@ div.parallax-image* {
 }
 
 div.parallax-image1 {
-  background-image: url(assets/first.png);
+  background-image: url(../assets/first.png);
 }
 
 div.parallax-image2 {
-  background-image: url(assets/second.png);
+  background-image: url(../assets/second.png);
 }
 
 div.parallax-image3 {
-  background-image: url(assets/three.png);
+  background-image: url(../assets/three.png);
 }
 
 
